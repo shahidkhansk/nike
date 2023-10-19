@@ -45,9 +45,6 @@ top: 15px;
     display: flex;
 }
 #navbar ul li{
-    animation-name: shahid;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
     list-style: none;
 }
 
