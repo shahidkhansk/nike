@@ -1,0 +1,285 @@
+/*CSS Reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+/*Navigation bar*/
+
+/*:root{ --navbar-height: 50px;*/
+/*}*/
+#bgcol{ background-color: black;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    margin: -5 2px;
+    opacity: .5;
+    z-index: 1;
+
+}
+
+#navbar{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    /*position: sticky;*/
+    position: fixed;
+    top: 40px;
+    width: 1340px;
+    align-items: center;
+    /*background-color: #0e0e0e;*/
+z-index: 1;
+}
+/*navigation logo and image*/
+#logo{ filter: invert(100);
+    position: fixed;
+left: 0px;
+top: 15px;
+}
+#logo img{ width: 85px;
+    margin: 20px 50px;
+}
+/*navigation bar styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    animation-name: shahid;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    list-style: none;
+}
+
+@keyframes shahid {
+    from
+    {
+        width: 50px;
+    }
+
+    to {
+        width: 70px;
+    }
+
+}
+#navbar ul li a{ padding: 10px;
+    font-family: "Barlow Medium";
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navbar ul .item1 a{
+   /*transition: background-color .3s ease-in-out .1s;*/
+
+}
+
+#navbar ul .item1 a:hover{
+    color: #000000;
+    background-color: white;
+    /*text-decoration: underline;*/
+
+}
+
+
+.icons ul li a:hover{
+    background-color: transparent;
+}
+
+.icons{
+    position: absolute;
+
+    right: 50px;
+}
+
+.icons ul li a:hover{ color: black !important;
+        background-color: white;}
+}
+
+.fa-behance:before{font-size: 20px}
+.fa-instagram:before{font-size: 20px}
+.fa-instagram:before{font-size: 20px}
+
+/*section*/
+#home{ display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/xxx.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.primary{
+    font-size: 3rem;
+    font-family: "Barlow ExtraBold";
+    padding: 6px;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-size: 1rem;
+    font-family: "Barlow Light";
+    color: white;
+    padding: 2px;
+
+}
+.btn{ padding: 6px 18px;
+margin: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-family: "Barlow Medium";
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+background-color: white;
+    color: black;
+
+}
+/*Services*/
+#service{ margin: 20px 0px;
+    display: flex;
+justify-content: center;
+    align-items: center;
+height: 600px;
+    /*border: 2px solid green;*/
+    background-color: #000000;
+}
+#service .box{ padding: 12px;
+    margin: 20px;
+    /*border: 2px solid red;*/
+    background-color: #000000;
+
+}
+
+#service .box img{ transition: all .5s ease-in-out .3s;}
+#service .box img:hover{ transform: scale(1.1);}
+
+/*#service .box:hover{*/
+/*    transform: scale(1.1);*/
+/*}*/
+ #service .box img{
+     width: 300px;
+     height: 400px;
+     display: block;
+     margin: auto;
+
+ }
+ .primary3{ text-align: center;
+     color: white;
+     padding-top: 20px;
+     margin: 5px;
+     font-family: "Barlow SemiBold";
+ }
+#service .box p{
+    color: white;
+    text-align: center;
+    font-family: "Barlow Thin";
+
+}
+
+.primary2{
+
+    margin: 2px auto;
+    text-align: center;
+    padding: 20px;
+font-family: "Barlow Black";
+}
+
+/*client section*/
+
+#client{
+    background-color: black;
+   display: flex;
+justify-content: center;
+    align-items: center;
+    height: 300px;
+    /*background-image: url("img/xxx.jpg");*/
+    /*background-position: center;*/
+}
+#client img{
+    height: 40px;
+    /*width: 39px;*/
+}
+/*#ms{*/
+/*    height: 40px;*/
+/*    width: 39px;*/
+/*}*/
+.client-item{
+    padding: 33px;
+    transition: all .5s ease-in-out .3s ;
+}
+.client-item:hover{
+    transform: scale(1.3);
+/*transition: all .4s ease-out .3s;*/
+
+}
+/*contact bar*/
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-family: "Barlow SemiBold";
+}
+#contact-box{
+    display: flex;
+justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#form-group{
+    padding-bottom: 0.5rem;
+    font-family: "Barlow SemiBold";
+    font-size: 1.1rem;
+    /*border: 2px solid green;*/
+    width: 600px;
+
+
+}
+#bott{
+    font-family: "Barlow SemiBold";
+    font-size: 1rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    /*background-color: transparent;*/
+    /*background-color: white;*/
+/*border: 2px solid white;*/
+    /*width: 40px;*/
+}
+/*#bott:hover{*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+    /*list-style: none;*/
+    /*border: none;*/
+
+/*}*/
+
+
+#contact-box{
+    /*border: 2px solid green;*/
+    color: white;
+    background-color: #000000;
+    height: 500px;
+
+}
+
+/*footer*/
+
+
+footer{ background-color: #c4bcbc;
+    color: #0e0e0e;
+padding: 10px 10px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+
